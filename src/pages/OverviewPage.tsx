@@ -7,8 +7,8 @@ export default function OverviewPage() {
   const [filters, setFilters] = useState<FilterTypes>({
     dateRange: { from: null, to: null },
     channel: 'all',
-    train: 'all-trains',
-    seatClass: 'all-classes'
+    train: '',
+    seatClass: ''
   });
 
   return (

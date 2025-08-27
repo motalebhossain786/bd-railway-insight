@@ -21,8 +21,8 @@ export function DashboardFilters({ filters, onFiltersChange }: DashboardFiltersP
     onFiltersChange({
       dateRange: { from: null, to: null },
       channel: 'all',
-      train: 'all-trains',
-      seatClass: 'all-classes'
+      train: '',
+      seatClass: ''
     });
   };
 
@@ -135,7 +135,7 @@ export function DashboardFilters({ filters, onFiltersChange }: DashboardFiltersP
                 <SelectValue placeholder="Select train" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all-trains">All Trains</SelectItem>
+                <SelectItem value="">All Trains</SelectItem>
                 <SelectItem value="dhaka-chittagong">Dhaka - Chittagong</SelectItem>
                 <SelectItem value="dhaka-sylhet">Dhaka - Sylhet</SelectItem>
                 <SelectItem value="dhaka-rajshahi">Dhaka - Rajshahi</SelectItem>
@@ -161,7 +161,7 @@ export function DashboardFilters({ filters, onFiltersChange }: DashboardFiltersP
                 <SelectValue placeholder="Select class" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all-classes">All Classes</SelectItem>
+                <SelectItem value="">All Classes</SelectItem>
                 <SelectItem value="ac-first">AC First Class</SelectItem>
                 <SelectItem value="ac-chair">AC Chair</SelectItem>
                 <SelectItem value="first-chair">First Class Chair</SelectItem>
